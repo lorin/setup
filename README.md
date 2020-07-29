@@ -59,10 +59,39 @@ cmd shift p > Preferences: Open User Settings > Vim : Use system clipboard
 ```
 
 
+### Snippets
+
+Preferences: Configure User Snippets > ruby.json (Ruby)
+
+
+```json
+{
+	"Dash entry": {
+		"prefix": ["entry"],
+		"body": [
+			"entry do",
+			"\tname '$1'",
+			"\tnotes <<-'END'",
+			"\t```",
+			"\t$0",
+			"\t```",
+			"\tEND",
+			"end"
+		],
+	},
+	"Dash category": {
+		"prefix": "category",
+		"body": [
+			"category do",
+			"\tid '$1'",
+			"\t$0",
+			"end"
+		]
+	}
+}
+```
 
 
 
 ## Dash
 * [cheatset](https://github.com/Kapeli/cheatset)
-
-
