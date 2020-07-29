@@ -91,7 +91,5 @@ Preferences: Configure User Snippets > ruby.json (Ruby)
 }
 ```
 
-
-
 ## Dash
 * [cheatset](https://github.com/Kapeli/cheatset)
