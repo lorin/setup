@@ -1,0 +1,68 @@
+# My setup
+
+Info about my own setup, to help me bootstrap when I get a new laptop.
+
+## Productivity apps
+
+* AntiRSI
+* TextExpander
+* Haptic touch bar
+* Fantastical
+
+## Doc apps
+
+* OmniFocus
+* Day One
+* Quiver
+
+## CLI apps
+
+* autojump
+* ripgrep
+* [tag](https://github.com/aykamko/tag)
+
+## Dev tools
+
+* Visual Studio Code
+* IntelliJ IDEA
+
+## .zshrc customizations
+
+```zsh
+alias c="git add . && git commit -m 'checkpoint'"
+alias co="code"
+alias init="git init && git add ."
+alias gitconfig="code ~/.gitconfig"
+alias gs="git status"
+alias m="make"
+alias zshrc="code ~/.zshrc"
+
+
+
+# https://github.com/aykamko/tag
+if (( $+commands[tag] )); then
+  export TAG_SEARCH_PROG=rg 
+  export TAG_CMD_FMT_STRING="code --goto {{.Filename}}:{{.LineNumber}}:{{.ColumnNumber}}"
+  tag() { command tag "$@"; source ${TAG_ALIAS_FILE:-/tmp/tag_aliases} 2>/dev/null }
+  alias ag=tag
+  alias rg=tag
+fi
+```
+
+
+## Visual Studio Code
+
+### System clipboard
+
+```
+cmd shift p > Preferences: Open User Settings > Vim : Use system clipboard
+```
+
+
+
+
+
+## Dash
+* [cheatset](https://github.com/Kapeli/cheatset)
+
+
