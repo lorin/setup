@@ -7,9 +7,11 @@ Info about my own setup, to help me bootstrap when I get a new laptop.
 * AntiRSI
 * Alfred
 * Fantastical
-* Haptic touch bar
-* TextExpander
+* f.lux
 * Skitch
+* Haptic touch bar
+* iStat Menus
+* TextExpander
 
 ## Doc apps
 
@@ -20,6 +22,7 @@ Info about my own setup, to help me bootstrap when I get a new laptop.
 ## CLI apps
 
 * autojump
+* ffind
 * ripgrep
 * [tag](https://github.com/aykamko/tag)
 
