@@ -5,9 +5,11 @@ Info about my own setup, to help me bootstrap when I get a new laptop.
 ## Productivity apps
 
 * AntiRSI
-* TextExpander
-* Haptic touch bar
+* Alfred
 * Fantastical
+* Haptic touch bar
+* TextExpander
+* Skitch
 
 ## Doc apps
 
@@ -92,4 +94,6 @@ Preferences: Configure User Snippets > ruby.json (Ruby)
 ```
 
 ## Dash
+
 * [cheatset](https://github.com/Kapeli/cheatset)
+* [My personal cheat sheets](https://github.com/lorin/cheat-sheets)
