@@ -8,10 +8,16 @@ Info about my own setup, to help me bootstrap when I get a new laptop.
 * Alfred
 * Fantastical
 * f.lux
-* Skitch
 * Haptic touch bar
 * iStat Menus
+* Karabiner-elements
+* Skitch
 * TextExpander
+
+### Karabiner-elements
+
+I use Karabiner-elements to remap my Microsoft keyboard's menu button to opt.
+
 
 ## Doc apps
 
@@ -23,6 +29,7 @@ Info about my own setup, to help me bootstrap when I get a new laptop.
 
 * autojump
 * ffind
+* hstr
 * ripgrep
 * [tag](https://github.com/aykamko/tag)
 
