@@ -29,7 +29,9 @@ I use Karabiner-elements to remap my Microsoft keyboard's menu button to opt.
 
 * autojump
 * ffind
+* gdub
 * hstr
+* httpie
 * ripgrep
 * [tag](https://github.com/aykamko/tag)
 
@@ -49,7 +51,8 @@ alias gs="git status"
 alias m="make"
 alias zshrc="code ~/.zshrc"
 
-
+# vi bindings
+bindkey -v
 
 # https://github.com/aykamko/tag
 if (( $+commands[tag] )); then
@@ -59,6 +62,8 @@ if (( $+commands[tag] )); then
   alias ag=tag
   alias rg=tag
 fi
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 ```
 
 
@@ -68,6 +73,27 @@ fi
 
 ```
 cmd shift p > Preferences: Open User Settings > Vim : Use system clipboard
+```
+
+###  .ideavimrc
+
+```
+" close fold with space
+map <space> zc
+
+" use system clipboard
+set clipboard+=unnamed
+
+" case-insensitive search
+set ic
+
+" surround
+set surround
+
+
+" actions (see original file for more details)
+noremap <C-n> :action GotoNextError<CR>
+noremap <C-p> :action GotoPreviousError<CR>
 ```
 
 
