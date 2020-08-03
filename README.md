@@ -67,6 +67,9 @@ alias pf="open -a 'Path Finder'"
 alias pull="git checkout master && git pull --prune"
 alias zshrc="code ~/.zshrc"
 
+export EDITOR='code'
+export HSTR_CONFIG=hicolor
+
 # vi bindings
 bindkey -v
 
