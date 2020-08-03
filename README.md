@@ -28,11 +28,15 @@ I use Karabiner-elements to remap my Microsoft keyboard's menu button to opt.
 ## CLI apps
 
 * autojump
+* bat
+* exa
 * ffind
+* fzf
 * gdub
 * hstr
 * httpie
 * ripgrep
+* scmpuff
 * [tag](https://github.com/aykamko/tag)
 
 ## Dev tools
@@ -43,16 +47,48 @@ I use Karabiner-elements to remap my Microsoft keyboard's menu button to opt.
 ## .zshrc customizations
 
 ```zsh
+# Don't do the magic URL escape thing
+DISABLE_MAGIC_FUNCTIONS=true
+
+# Show only the name of the directory in the title
+ZSH_THEME_TERM_TITLE_IDLE="%~"
+
+alias agt='ag --ignore test'
 alias c="git add . && git commit -m 'checkpoint'"
 alias co="code"
+alias dir="pwd | pbcopy"
 alias init="git init && git add ."
+alias gdt="git difftool"
 alias gitconfig="code ~/.gitconfig"
 alias gs="git status"
+alias jump='cd `greadlink -f .`'
 alias m="make"
+alias pf="open -a 'Path Finder'"
+alias pull="git checkout master && git pull --prune"
 alias zshrc="code ~/.zshrc"
 
 # vi bindings
 bindkey -v
+
+plugins=(vi-mode zsh-autosuggestions)
+
+
+# Render a markdown file as html in the browser
+# do a "brew install browser" to get the browser app so you can pipe html to
+# your browser
+function html {
+    CSS="https://rawgit.com/lorin/macdown/master/MacDown/Resources/Styles/GitHub2.css"
+    if [ $#@ -eq 0 ]; then
+        if [[ -a README.md ]]; then
+            FNAME=README.md
+        else
+            FNAME=(*.md)
+        fi
+    else
+        FNAME="$1"
+    fi
+    pandoc -c $CSS $FNAME | browser
+}
 
 # https://github.com/aykamko/tag
 if (( $+commands[tag] )); then
@@ -78,8 +114,18 @@ cmd shift p > Preferences: Open User Settings > Vim : Use system clipboard
 ###  .ideavimrc
 
 ```
+" spacemacs behavior
+" https://stackoverflow.com/a/43072912
+imap fd <Esc>
+set timeoutlen=1000
+"
+" Cycle through buffers
+map <Tab> gt
+map <S-Tab> gT
+
 " close fold with space
 map <space> zc
+
 
 " use system clipboard
 set clipboard+=unnamed
@@ -90,10 +136,18 @@ set ic
 " surround
 set surround
 
-
-" actions (see original file for more details)
+" To see the names of all of the commands, type the following in IDEA
+" :actionlist
+" https://github.com/JetBrains/ideavim#executing-ide-actions
+noremap <C-r> :action Run<CR>
+noremap <C-b> :action ToggleLineBreakpoint<CR>
 noremap <C-n> :action GotoNextError<CR>
 noremap <C-p> :action GotoPreviousError<CR>
+
+let mapleader = ","
+noremap <leader>b :action CloseActiveTab<CR>
+noremap <leader>d :action CopyPaths<CR>
+noremap <leader>D :action CopyPaths<CR>
 ```
 
 
