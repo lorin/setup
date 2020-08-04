@@ -36,7 +36,7 @@ I use Karabiner-elements to remap my Microsoft keyboard's menu button to opt.
 * hstr
 * httpie
 * ripgrep
-* scmpuff
+* [scmpuff](https://github.com/mroth/scmpuff)
 * [tag](https://github.com/aykamko/tag)
 
 ## Dev tools
