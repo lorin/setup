@@ -192,3 +192,7 @@ Preferences: Configure User Snippets > ruby.json (Ruby)
 
 * [cheatset](https://github.com/Kapeli/cheatset)
 * [My personal cheat sheets](https://github.com/lorin/cheat-sheets)
+
+## Alfred
+
+* [Custom Alfred iTerm Scripts](https://github.com/vitorgalvao/custom-alfred-iterm-scripts)
