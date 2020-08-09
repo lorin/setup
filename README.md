@@ -14,13 +14,15 @@ Info about my own setup, to help me bootstrap when I get a new laptop.
 * Skitch
 * TextExpander
 
+
 ### Karabiner-elements
 
 I use Karabiner-elements to remap my Microsoft keyboard's menu button to opt.
 
 
 ## Doc apps
-
+* Bear
+* GoodNotes
 * OmniFocus
 * Day One
 * Quiver
