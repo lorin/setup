@@ -6,6 +6,7 @@ Info about my own setup, to help me bootstrap when I get a new laptop.
 
 * AntiRSI
 * Alfred
+* Default Folder X
 * Fantastical
 * f.lux
 * Haptic touch bar
@@ -13,6 +14,7 @@ Info about my own setup, to help me bootstrap when I get a new laptop.
 * Karabiner-elements
 * Skitch
 * TextExpander
+* [Witch](https://manytricks.com/witch/)
 
 
 ### Karabiner-elements
