@@ -74,8 +74,10 @@ alias zshrc="code ~/.zshrc"
 export EDITOR='code'
 export HSTR_CONFIG=hicolor
 
-# vi bindings
+# vi bindings with c-a and c-e emacs-style
 bindkey -v
+bindkey "^A" vi-beginning-of-line
+bindkey "^E" vi-end-of-line
 
 plugins=(vi-mode zsh-autosuggestions)
 
