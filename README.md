@@ -14,6 +14,7 @@ Info about my own setup, to help me bootstrap when I get a new laptop.
 * Karabiner-elements
 * Skitch
 * TextExpander
+* ToothFairy
 * [Witch](https://manytricks.com/witch/)
 
 
