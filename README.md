@@ -11,8 +11,9 @@ Info about my own setup, to help me bootstrap when I get a new laptop.
 * f.lux
 * Haptic touch bar
 * iStat Menus
-* [Muzzle](https://muzzleapp.com/)
+* [Kaleidoscope](https://www.kaleidoscopeapp.com/)
 * Karabiner-elements
+* [Muzzle](https://muzzleapp.com/)
 * Skitch
 * TextExpander
 * ToothFairy
